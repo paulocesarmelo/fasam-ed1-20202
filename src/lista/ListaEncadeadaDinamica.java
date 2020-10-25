@@ -69,6 +69,38 @@ public class ListaEncadeadaDinamica {
 		
 	}
 	
+	public void removerDoInicio() {
+		
+		if(tamanho == 0) {
+			System.out.println("Lista vazia!");
+		}else {
+			
+			primeiro = primeiro.getProximo();
+			tamanho--;
+			
+		}
+		
+	}
+	
+	public void removerDoFinal() {
+		
+		if(tamanho == 0) {
+			System.out.println("Lista vazia!");
+		}else {
+			
+			Elemento elem = primeiro;
+			
+			//paro no penultimo elemento
+			for(int i = 0; i<tamanho-2; i++) {
+				elem = elem.getProximo();
+			}
+			
+			elem.setProximo(null);
+			
+		}
+		
+	}
+	
 	
 	public Elemento getPrimeiro() {
 		return primeiro;

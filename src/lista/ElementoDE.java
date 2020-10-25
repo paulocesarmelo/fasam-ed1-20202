@@ -1,10 +1,10 @@
 package lista;
 
-public class Elemento {
+public class ElementoDE {
 
 	private int posicao;
 	
-	private Elemento proximo;
+	private ElementoDE proximo, anterior;
 	
 	//Generica
 	private Object valor;
@@ -17,11 +17,11 @@ public class Elemento {
 		this.posicao = posicao;
 	}
 
-	public Elemento getProximo() {
+	public ElementoDE getProximo() {
 		return proximo;
 	}
 
-	public void setProximo(Elemento proximo) {
+	public void setProximo(ElementoDE proximo) {
 		this.proximo = proximo;
 	}
 
@@ -32,6 +32,15 @@ public class Elemento {
 	public void setValor(Object valor) {
 		this.valor = valor;
 	}
+	
+	public void setAnterior(ElementoDE anterior) {
+		this.anterior = anterior;
+	}
+	
+	public ElementoDE getAnteriro() {
+		return this.anterior;
+	}
+			
 	
 	public void imprimirDados() {
 		System.out.print(valor.toString()+ "\t");

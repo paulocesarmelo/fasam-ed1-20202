@@ -142,9 +142,52 @@ public class ListaEncadeadaEstatica {
 		
 	}
 	
+	public int pegarDoFinal() {
+		if(qtdElementos == 0) {
+			System.out.println("Lista vazia!");
+		}else {
+			return elementos[qtdElementos-1];
+		}
+		return -1;
+	}
+	
+	public int pegarDoInicio() {
+		if(qtdElementos == 0) {
+			System.out.println("Lista vazia!");
+		}else {
+			return elementos[0];
+		}
+		return -1;
+	}
+	
+	
+	public int[] getElementos() {
+		return elementos;
+	}
+
+	public void setElementos(int[] elementos) {
+		this.elementos = elementos;
+	}
+
+	public int getQtdElementos() {
+		return qtdElementos;
+	}
+
+	public void setQtdElementos(int qtdElementos) {
+		this.qtdElementos = qtdElementos;
+	}
+
+	public int getTamanho() {
+		return tamanho;
+	}
+
+	public void setTamanho(int tamanho) {
+		this.tamanho = tamanho;
+	}
+
 	public void imprimirLista(){
 		
-		System.out.print("Lista: ");
+		//System.out.print("Lista: ");
 		for(int i=0; i < qtdElementos; i++) {
 			System.out.print(elementos[i]+"\t");
 		}

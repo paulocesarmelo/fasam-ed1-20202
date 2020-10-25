@@ -1,40 +1,40 @@
 package lista;
 
-public class TesteLED {
+public class TesteLDE {
 
 	public static void main(String[] args) {
 		
-		ListaEncadeadaDinamica lista = new ListaEncadeadaDinamica();
+		ListaDuplamenteEncadeada lista = new ListaDuplamenteEncadeada();
 		
-		// 20	30	10	20	10
+		// 30	10	50	20	40
 		
-		Elemento e1 = new Elemento();
+		ElementoDE e1 = new ElementoDE();
 		e1.setValor(10);
 		
 		lista.adicionaNoInicio(e1);
 		
-		Elemento e2 = new Elemento();
+		ElementoDE e2 = new ElementoDE();
 		e2.setValor(20);
 		
 		lista.adicionaNoFinal(e2);
 		
-		Elemento e3 = new Elemento();
+		ElementoDE e3 = new ElementoDE();
 		e3.setValor(30);
 		
 		lista.adicionaNoInicio(e3);
 		
-		Elemento e4 = new Elemento();
+		ElementoDE e4 = new ElementoDE();
 		e4.setValor(40);
 		
 		lista.adicionaNoFinal(e4);
 		
-		Elemento e5 = new Elemento();
+		ElementoDE e5 = new ElementoDE();
 		e5.setValor(50);
 		
 		lista.adicionaNaPosicao(e5, 2);
 		
-		
 		lista.imprimirElementos();
+		
 		
 		
 	}
