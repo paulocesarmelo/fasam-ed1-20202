@@ -11,11 +11,15 @@ public class TestLinkedList {
 		list.add("Beltrano");
 		list.add("Fulano");
 		
-		list.remove("Fulano");
+		//list.remove("Fulano");
 		
 		System.out.println(list.toString());
 		
 		System.out.println(list.size());
+		
+		list.addFirst("Paulo");
+		
+		System.out.println(list.toString());
 		
 	}
 	

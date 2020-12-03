@@ -37,7 +37,7 @@ public class ListaEncadeadaEstatica {
 	public void adicionaNoFinal(int elemento) {
 		
 		if(tamanho == qtdElementos) {
-			System.out.println("A lista está cheia!");
+			System.out.println("Não foi possível inserir o elemento: "+elemento+"\nEstá cheia!");
 		}else {
 			
 			elementos[qtdElementos] = elemento;
